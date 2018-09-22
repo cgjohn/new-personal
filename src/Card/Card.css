@@ -1,5 +1,6 @@
 body {
 	font-size: .625%;
+	color: #1D222B;
 }
 
 img {
@@ -41,7 +42,7 @@ p {
 }
 
 .cardFront {
-	background: orangered;
+	background: #eeefed;
 }
 
 .card:Hover .cardFront {
@@ -49,7 +50,7 @@ p {
 }
 
 .cardBack {
-	background-color: green;
+	background: #eeefed;
 	font-size: 1.2rem;
 	transform: rotateY(180deg);
 	display: flex;
@@ -64,24 +65,25 @@ p {
 }
 
 .btn {
-	box-shadow: 0px 0px 15px 1px #86f268;
-	background:linear-gradient(radial, #7df59d 5%, #c1faa0 100%);
-	background-color:#7df59d;
+	/*Background: radial-gradient(ellipse at center, #fffde0 10%,#0afa09 999%);*/
+	background-color:#4F5D75;
 	border-radius:28px;
-	border: 1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:1rem;
+	color: #eeefed;
 	padding:1.2rem 2rem;
+	margin: 1px 0 1px 0;
 	text-decoration:none;
 	margin-bottom: 10px;
 }
 .btn:hover {
-	background:linear-gradient(radial, #c1faa0 15%, #7df59d 100%);
-	background-color:#c1faa0;
+	/*background: radial-gradient(ellipse at center, #fffde0 20%,#0afa09 99%);*/
+	opacity: .85
 }
 .btn:active {
-	position:relative;
-	top:1px;
+	opacity: .7;
+	position: relative;
+	top: 1px;
 }

@@ -21,7 +21,7 @@ class Card extends Component {
         </div>
         <div className={[classes.cardBack, classes.cardSide].join(' ')}>
         	<p>{this.props.project.description}</p>
-        	<a targe="_blank" href={this.props.project.link}>
+        	<a target="_blank" href={this.props.project.link}>
         		<div className={classes.btn}>
         			Check it out
         		</div>
