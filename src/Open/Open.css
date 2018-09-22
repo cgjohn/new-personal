@@ -1,0 +1,138 @@
+.topCover {
+	height: 100vh;
+	width: 100vw;
+	/*background-color: rgb(255, 252, 191);*/
+	background: radial-gradient(ellipse at center, #fffde0 0%,#0afa09 999%);
+	transition: opacity 4s ease-out;
+}
+
+.hideTopCover {
+	opacity: 0;
+}
+
+.btn:before {
+	height: 0px;
+}
+
+.btn {
+	z-index: 20;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	font-size: 18px;
+	color: #fffde0;
+	background: radial-gradient(ellipse at center, white 0%,#fffde0 90%);
+	border-radius: 200px;
+	box-shadow: #fffde0 0px 0px 40px;
+	color: rgba(0,0,0,.8);
+	transition: all 1s ease-out, font-size .8s ease-out;
+	border: none
+}
+
+.btn:hover {
+	background: radial-gradient(ellipse at center, #d1d1d1 0%,#fffde0 90%);
+	box-shadow: #fffde0 0px 1px 40px;
+}
+
+.btn:focus {
+	outline: none
+}
+
+.btn:active {
+	height: 175px;
+	width: 175px;
+	box-shadow: #fffde0 0px 3px 60px;
+}
+
+.btnFade {
+	width: 0px;
+	height: 0;
+	box-shadow: none;
+	opacity: 0;
+	font-size: 1px;
+}	
+
+.coverTop {
+	perspective: 1000px;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	/*background-color: red;*/
+	background-color: rgba(0,0,0,.8);
+	clip-path: polygon(0 0, 50% 49.5%, 100% 0);
+	transition-property: all; 
+	transition-duration: 2s;
+	transition-delay: 1s;
+	transform: rotateX(0deg);
+	transform-origin: top; 
+}
+
+.removeTop {
+	transform: rotateX(90deg);
+	opacity: 0;
+}
+
+
+.coverRight {
+	perspective: 1000px;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	/*background-color: #537dc1;*/
+	background-color: rgba(0,0,0,.8);
+	clip-path: polygon(100% 100%, 100% 0%, 100% 0, 50.5% 50%);
+	transition-property: all; 
+	transition-duration: 2s;
+	transform: rotateY(0deg);
+	transition-delay: 1.5s;
+	transform-origin: right; 
+}
+
+.removeRight {
+	transform: rotateY(-90deg);
+	opacity: 0;
+}
+
+.coverBottom {
+	perspective: 1000px;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,.8);
+	clip-path: polygon(0 100%, 50% 50.5%, 100% 100%);
+	transition-property: all; 
+	transition-duration: 2s;
+	transition-delay: 2s;
+	transform: rotateX(0deg);
+	transform-origin: bottom; 
+}
+
+.removeBottom {
+	transform: rotateX(-90deg);
+	opacity: 0;
+}
+
+.coverLeft {
+	position: absolute;
+	clip-path:  polygon(0 100%, 49.5% 50%, 0 0);
+	/*background-color: #d86849;*/
+	background-color: rgba(0,0,0,.8);
+	height: 100vh;
+	width: 100vw;
+	perspective: 1000px;
+	transition-property: all; 
+	transition-duration: 2s;
+	transition-delay: 2.5s;
+	transform: rotateY(0deg);
+	transform-origin: left; 
+}
+
+.removeLeft {
+	transform: rotateY(90deg);
+	opacity: 0;
+}
+

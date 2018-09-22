@@ -1,1 +1,13 @@
-Home.css
+.container {
+	margin: auto;
+	width: 80%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center
+}
+
+h1 {
+	font-size: 2.4rem;
+}
