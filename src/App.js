@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './App.css';
+import classes from './App.scss';
 
 import Open from './Open/Open'
 import Home from './Home/Home'
